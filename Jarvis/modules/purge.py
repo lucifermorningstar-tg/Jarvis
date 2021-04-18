@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from MashaRoBot import telethn
-from MashaRoBot.modules.helper_funcs.telethn.chatstatus import (
+from Jarvis import telethn
+from Jarvis.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
