@@ -1,4 +1,4 @@
-c# credits  @chsaiujwal @daisyxrobot
+# credits  @chsaiujwal @daisyxrobot
 # ported from masha @Mr_Dark_Prince
 # ported to Jarvis @tamilvip007
 
