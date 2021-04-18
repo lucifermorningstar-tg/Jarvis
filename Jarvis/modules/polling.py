@@ -2,9 +2,9 @@ from pymongo import MongoClient
 from telethon import *
 from telethon.tl import *
 
-from MashaRoBot import BOT_ID, MONGO_DB_URI
-from MashaRoBot import telethn as tbot
-from MashaRoBot.events import register
+from Jarvis import BOT_ID, MONGO_DB_URI
+from Jarvis import telethn as tbot
+from Jarvis.events import register
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
