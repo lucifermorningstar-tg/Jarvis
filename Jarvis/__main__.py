@@ -85,8 +85,8 @@ buttons = [
     ],
     [
 
-        InlineKeyboardButton(text="⭐UPDATES", url="http://t.me/jarvis_updates").
-        InlineKeyboardButton(text="👥 SUPPORT", url="https://t.me/jarvisbot_support").
+        InlineKeyboardButton(text="⭐UPDATES", url="http://t.me/jarvis_updates"),
+        InlineKeyboardButton(text="👥 SUPPORT", url="https://t.me/jarvisbot_support"),
     ],
     [
         InlineKeyboardButton(
