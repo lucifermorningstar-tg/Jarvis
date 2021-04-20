@@ -1,2 +1,2 @@
-web: python3 -m Jarvis
+worker: python3 -m Jarvis
 ps:scale worker=1
