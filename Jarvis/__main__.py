@@ -91,7 +91,6 @@ buttons = [
     [
         InlineKeyboardButton(
             text="📚 COMMANDS", callback_data="help_back"),
-        ),
     ],
 ]
 
