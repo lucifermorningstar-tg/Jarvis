@@ -669,4 +669,4 @@ if __name__ == "__main__":
     telethn.start(bot_token=TOKEN)
     pbot.start()
     main()
-© 2021 GitHub, Inc
+
