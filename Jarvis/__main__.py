@@ -612,7 +612,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝕊𝕐𝕊𝕋𝔼𝕄𝕊 𝔸ℝ𝔼 ℕ𝕆𝕎 𝕆ℕ𝕃𝕀ℕ𝔼](https://telegra.ph/file/3ebaad12dc85ba0aa0e3e.jpg)")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "[𝕊𝕐𝕊𝕋𝔼𝕄𝕊 𝔸ℝ𝔼 ℕ𝕆𝕎 𝕆ℕ𝕃𝕀ℕ𝔼](https://telegra.ph/file/3ebaad12dc85ba0aa0e3e.jpg)", parse_mode=ParseMode.MARKDOWN)
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
