@@ -1,5 +1,4 @@
 from Jarvis import pbot
-from Jarvis.utils.errors import capture_err
 from Jarvis.utils.dbfunctions import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
 from Jarvis.utils.filter_groups import karma_positive_group, karma_negative_group
@@ -25,7 +24,6 @@ regex_downvote = r"^(\-|\-\-|\-1|👎)$"
                 & ~filters.bot
                 & ~filters.edited,
                 group=karma_positive_group)
-@capture_err
 async def upvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -56,7 +54,6 @@ async def upvote(_, message):
                 & ~filters.bot
                 & ~filters.edited,
                 group=karma_negative_group)
-@capture_err
 async def downvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -77,7 +74,6 @@ async def downvote(_, message):
         f'Decremented Karma Of {user_mention} By 1 \nTotal Points: {karma}'
     )
 
-@capture_err
 @pbot.on_message(filters.command("karma") & filters.group)
 async def karma(_, message):
     chat_id = message.chat.id
