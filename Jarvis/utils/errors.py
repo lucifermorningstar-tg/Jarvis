@@ -1,7 +1,7 @@
 import sys
 import traceback
 from functools import wraps
-from Jarvis import app, EVENT_LOGS
+from Jarvis import pbot, EVENT_LOGS
 
 
 def split_limits(text):
