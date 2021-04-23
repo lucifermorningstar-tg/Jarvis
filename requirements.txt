@@ -1,6 +1,7 @@
 future
 emoji
 lxml
+python-arq
 wget
 gtts
 beautifulsoup4
