@@ -195,6 +195,8 @@ updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("jarvis", API_ID, API_HASH)
 pbot = Client("jarvispbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 app = Client("jarvus", bot_token=TOKEN, api_id=API_ID, api_hash=API_HASH)
+mongo_client = MongoClient(MONGO_DB_URI)
+db = mongo_client.jarvis
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
