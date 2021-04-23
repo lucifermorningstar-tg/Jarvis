@@ -170,7 +170,7 @@ else:
     REDIS_URL = Config.REDIS_URL
     IBM_WATSON_CRED_URL = Config.IBM_WATSON_CRED_URL
     IBM_WATSON_CRED_PASSWORD = Config.IBM_WATSON_CRED_PASSWORD
-
+    LOG_GROUP_ID = -1001176306346
     
     try:
         BL_CHATS = set(int(x) for x in Config.BL_CHATS or [])
