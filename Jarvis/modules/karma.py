@@ -16,7 +16,7 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|go
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@app.on_message(filters.text
+@pbot.on_message(filters.text
                 & filters.group
                 & filters.incoming
                 & filters.reply
@@ -24,8 +24,8 @@ regex_downvote = r"^(\-|\-\-|\-1|👎)$"
                 & ~filters.via_bot
                 & ~filters.bot
                 & ~filters.edited,
-                group=karma_positive_group)
-@capture_err
+                group=karma_positive_group
+)
 async def upvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -47,7 +47,7 @@ async def upvote(_, message):
     )
 
 
-@app.on_message(filters.text
+@pbot.on_message(filters.text
                 & filters.group
                 & filters.incoming
                 & filters.reply
@@ -55,8 +55,8 @@ async def upvote(_, message):
                 & ~filters.via_bot
                 & ~filters.bot
                 & ~filters.edited,
-                group=karma_negative_group)
-@capture_err
+                group=karma_negative_group
+)
 async def downvote(_, message):
     if message.reply_to_message.from_user.id == message.from_user.id:
         return
@@ -78,8 +78,7 @@ async def downvote(_, message):
     )
 
 
-@app.on_message(filters.command("karma") & filters.group)
-@capture_err
+@pbot.on_message(filters.command("karma") & filters.group)
 async def karma(_, message):
     chat_id = message.chat.id
 
