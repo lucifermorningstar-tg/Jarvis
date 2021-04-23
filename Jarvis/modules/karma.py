@@ -16,7 +16,7 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thx|tnx|ty|thank you|thanx|thanks|pro|cool|go
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@pbot.on_message(filters.text
+@app.on_message(filters.text
                 & filters.group
                 & filters.incoming
                 & filters.reply
@@ -47,7 +47,7 @@ async def upvote(_, message):
     )
 
 
-@pbot.on_message(filters.text
+@app.on_message(filters.text
                 & filters.group
                 & filters.incoming
                 & filters.reply
@@ -78,7 +78,7 @@ async def downvote(_, message):
     )
 
 @capture_err
-@pbot.on_message(filters.command("karma") & filters.group)
+@app.on_message(filters.command("karma") & filters.group)
 async def karma(_, message):
     chat_id = message.chat.id
 
