@@ -74,8 +74,9 @@ def song(client, message):
     except Exception as e:
         print(e)
 
-
-__mod_name__ = "pyrosong"
 __help__= """
 /song - To download the required song from YouTube
 """
+
+
+__mod_name__ = "pyrosong"
