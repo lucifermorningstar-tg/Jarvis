@@ -1,8 +1,7 @@
 import sys
 import traceback
 from functools import wraps
-from Jarvis import pbot, EVENT_LOGS
-
+from Jarvis import pbot, LOG_GROUP_ID
 
 def split_limits(text):
     if len(text) < 2048:
@@ -43,7 +42,7 @@ def capture_err(func):
             )
             for x in error_feedback:
                 await pbot.send_message(
-                    EVENT_LOGS,
+                    LOG_GROUP_ID
                     x
                 )
             raise err
