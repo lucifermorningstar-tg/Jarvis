@@ -54,6 +54,10 @@ countryinfo
 html2text
 bs4
 bing_image_downloader
+gitpython
 search_engine_parser
 pytz
 motor
+youtube_search_python
+aiohttp
+
