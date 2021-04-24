@@ -79,4 +79,4 @@ __help__= """
 """
 
 
-__mod_name__ = "pyrosong"
+__mod_name__ = "✨PYROSONG"
