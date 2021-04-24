@@ -1,4 +1,4 @@
-from Jarvis import client as pbot
+from Jarvis import client as tbot
 from Jarvis.events import register
 import os
 import asyncio
@@ -10,7 +10,7 @@ from Jarvis import TEMP_DOWNLOAD_DIRECTORY as path
 from Jarvis import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
 water = './Jarvis/resources/Jarvis.jpg'
-client = pbot
+client = tbot
 
 @register(pattern=r"^/send ?(.*)")
 async def Prof(event):
