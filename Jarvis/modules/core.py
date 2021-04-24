@@ -1,4 +1,4 @@
-from Jarvis import client as tbot
+from Jarvis import telethn as tbot
 from Jarvis.events import register
 import os
 import asyncio
