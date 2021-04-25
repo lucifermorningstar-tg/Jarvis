@@ -90,20 +90,20 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("Daisy AI Already Activated In This Chat")
+            await lel.edit("Jarvis AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"Jarvis AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Daisy AI Was Not Activated In This Chat")
+            await lel.edit("Jarvis AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"Daisy AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Jarvia AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -196,8 +196,8 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("daisy", "Aco")
-        test = test.replace("Daisy", "Aco")
+        test = test.replace("jarvis", "Aco")
+        test = test.replace("Jarvis", "Aco")
         querystring = {
             "bid": "178",
             "key": "sX5A2PcYZbsN5EY6",
@@ -266,8 +266,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("jarvis", "Aco")
+    test = test.replace("Jarvis", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -296,7 +296,7 @@ async def inuka(client, message):
 
 
 @Jarvis.on_message(
-    filters.regex("Daisy|daisy|Jarvis|Jarvis|Jarvis")
+    filters.regex("darkjarvis|darkJarvia|DarkJarvis|jarvis|Jarvis")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -343,8 +343,8 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("daisy", "Aco")
-    test = test.replace("Daisy", "Aco")
+    test = test.replace("jarvis", "Aco")
+    test = test.replace("Jarvis", "Aco")
     querystring = {
         "bid": "178",
         "key": "sX5A2PcYZbsN5EY6",
@@ -359,7 +359,7 @@ async def inuka(client, message):
     result = response.text
     result = result.replace('{"cnt":"', "")
     result = result.replace('"}', "")
-    result = result.replace("Aco", "Daisy")
+    result = result.replace("Aco", "Jarvis")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     pro = result
