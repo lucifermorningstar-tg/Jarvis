@@ -15,7 +15,7 @@ active_chats_ubot = []
 # Enabled | Disable Chatbot
 
 
-@pbot.on_message(filters.command("chatbot") & ~filters.edited)
+@pbot.on_message(filters.command("chat") & ~filters.edited)
 @capture_err
 async def chatbot_status(_, message):
     global active_chats_bot
